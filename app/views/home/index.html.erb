@@ -1,0 +1,18 @@
+
+<div _ngcontent-eyu-c4 class="row">
+    <% Article.all.each do |article| %>
+    <div _ngcontent-eyu-c4 class="col-lg-3">
+        <div _ngcontent-eyu-c4 style="min-height: 420px" class="article card my-3">
+            <div _ngcontent-eyu-c4  class="card-body">
+                <h6 _ngcontent-eyu-c4 style="height: 80px;overflow: hidden;text-overflow: ellipsis"  class="card-title text-bold"><%=article.title%>
+                </h6>
+                <div _ngcontent-eyu-c4  style="height: 200px;" class="image">
+                    <img _ngcontent-eyu-c4 style="height: 100%;object-fit: cover;" class="card-img-top" alt="Google no longer producing high quality search results in significant categories" src="assets/article_image.png">
+                </div>
+                <p _ngcontent-eyu-c4  class="text-muted small"><%=article.description%></p>
+                <a _ngcontent-eyu-c4  target="_blank" class="btn btn-primary ml-auto" href="<%=article.url%>">Read more</a>
+            </div>
+        </div>
+    </div>
+     <% end %>
+</div>
